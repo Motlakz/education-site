@@ -6,22 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduLite Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script src="https://kit.fontawesome.com/1dd55a644d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
         <header>
-            <nav>
+            <nav class="navbar">
                 <figure>
-                    <img src="./assets/logo.png" alt="EduLite logo">
+                    <a href="./index.html"><img src="./assets/logo.png" alt="EduLite logo" width="80px"></a>
                 </figure>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <button id="open-menu-btn"><i class="fa fa-bars"></i></button>
+                <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
             </nav>
+            <section class="header-content">
+                <article>
+                    <h2>Forge a new path to enhancing your skillset</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt amet blanditiis autem vero eveniet voluptatum exercitationem quam! Debitis laborum sint cumque necessitatibus, eum saepe!</p>
+                </article>
+                <button type="button">Let's Get Started!</button>    
+            </section>
         </header>
     </main>
 </body>

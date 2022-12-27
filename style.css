@@ -1,7 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand:wght@600&display=swap');
 
 * {
+    border: 0;
     box-sizing: border-box;
     margin: 0 auto;
+    outline: 0;
     padding: 0;
+}
+.navbar {
+    background: var(--color-warning);
+    display: flex;
+    width: var(--nav-width-lg);
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a:hover {
+    color: var(--color-theme-switch);
+}
+.navbar ul a {
+    color: var(--color-primary);
+    font-family: 'Quicksand',sans-serif;
+    text-decoration: none;
+}
+:root {
+    --color-primary: rgb(143, 56, 143);
+    --color-success: #51f74b;
+    --color-warning: rgb(234, 152, 38);
+    --color-danger: rgb(219, 15, 15);
+    --color-danger-variant: rgb(103, 9, 9);
+    --color-aliceblue: rgb(120, 215, 217);
+    --color-theme: #ffff00;
+    --color-theme-dark: rgb(32, 32, 109);
+    --color-theme-switch: #63FF6B;
+
+    --nav-width-lg: 80%;
+    --nav-width-md: 90%;
+    --nav-width-sm: 94%;
+    
+    --transition: all 400ms ease;
+}
+body {
+    background: var(--color-theme);
+    color:var(--color-aliceblue);
+    font-family: 'Nunito', sans-serif;
+}
+header {
+    background: var(--color-theme-dark);
+    height: 80vh;
 }
